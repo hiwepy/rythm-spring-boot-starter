@@ -24,7 +24,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.boot.autoconfigure.template.TemplateLocation;
 import org.springframework.boot.autoconfigure.web.ConditionalOnEnabledResourceChain;
-import org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration;
+import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -143,7 +143,7 @@ public class RythmAutoConfiguration {
 		@ConditionalOnProperty(name = "spring.rythm.enabled", matchIfMissing = true)
 		public RythmViewResolver beetlViewResolver() {
 			RythmViewResolver resolver = new RythmViewResolver();
-			this.properties.applyToViewResolver(resolver);
+			this.properties.applyToMvcViewResolver(resolver);
 			return resolver;
 		}
 
