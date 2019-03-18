@@ -10,5 +10,5 @@ server:
     key-alias: tomcat
   port: 8080
 spring:  
-  roc
+  ro
         

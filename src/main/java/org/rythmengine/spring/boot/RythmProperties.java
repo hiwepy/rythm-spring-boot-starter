@@ -25,7 +25,7 @@ public class RythmProperties extends AbstractTemplateViewResolverProperties {
 
 	public static final String DEFAULT_PREFIX = "";
 
-	public static final String DEFAULT_SUFFIX = ".httl";
+	public static final String DEFAULT_SUFFIX = ".html";
 
 	/**
 	 * Well-known Beetl keys which will be passed to Beetl's  Configuration.

@@ -24,7 +24,7 @@ import org.springframework.boot.autoconfigure.template.PathBasedTemplateAvailabi
 public class RythmTemplateAvailabilityProvider extends PathBasedTemplateAvailabilityProvider {
 
 	public RythmTemplateAvailabilityProvider() {
-		super("org.beetl.core.Configuration", RythmTemplateAvailabilityProperties.class, "spring.rythm");
+		super("org.rythmengine.core.Configuration", RythmTemplateAvailabilityProperties.class, "spring.rythm");
 	}
 
 	static final class RythmTemplateAvailabilityProperties extends TemplateAvailabilityProperties {
